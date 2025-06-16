@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
       margin: 0;
       background-color: #fffaf7;
       color: #333;
@@ -50,15 +50,18 @@
       margin: 0.5rem 0;
     }
 
-    header h3 {
+    header h3.subtitle {
       margin-top: 0;
+      text-transform: uppercase;
+      color: #333;
+      font-weight: normal;
     }
 
     section {
       padding: 1rem 1rem 0 1rem;
     }
 
-    section>h2 {
+    section > h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
       margin-top: 0;
@@ -86,13 +89,26 @@
     }
 
     .prijs-blok p {
-      font-size: 1.4rem;
+      font-size: 2rem;
+      margin: 1rem 0;
       font-weight: bold;
       color: #b26a3d;
     }
 
+    .contact {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+      flex-wrap: wrap;
+    }
+
     .contact a {
-      display: block;
+      width: 250px;
       color: #333;
       text-decoration: none;
       font-size: 1.1rem;
@@ -101,6 +117,36 @@
 
     .contact a:hover {
       color: #b26a3d;
+    }
+
+    .contact a.button {
+      border-radius: 10px;
+      padding: .4rem .2rem;
+    }
+
+    .contact a.button.whatsapp {
+      color: #25d366;
+      border: 1px solid #25d366;
+    }
+
+    .contact a.button.whatsapp:hover {
+      background-color: #25d366;
+      border: 1px solid #25d366;
+      color: white;
+      ;
+    }
+
+    .contact a.button.instagram {
+      color: #b26a3d;
+      border: 1px solid #b26a3d;
+      border-radius: 10px;
+    }
+
+    .contact a.button.instagram:hover {
+      background-color: #b26a3d;
+      border: 1px solid #b26a3d;
+      color: white;
+      ;
     }
 
     .nestjes {
@@ -124,19 +170,6 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .socials {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-    }
-
-    .socials a {
-      margin: 0 0.5rem;
-      color: #b26a3d;
-      font-size: 1.14rem;
-      text-decoration: none;
-    }
-
     footer {
       padding: 1rem;
       font-size: 0.9rem;
@@ -150,7 +183,7 @@
   <header>
     <img src="logo.png" width="300" height="150" alt="One in a Million Poms">
     <h1>Trimsalon & hobby-kennel Enkhuizen</h1>
-    <h3>Voor pomeriaantjes / dwergkeesjes</h2>
+    <h3 class="subtitle">pomeriaantjes / dwergkeeshondjes</h2>
   </header>
 
   <section class="prijzen">
@@ -166,16 +199,20 @@
 
   <section class="contact">
     <h2 id="contact">Contact</h2>
-    <a href="https://wa.me/31651029224" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: 06-51029224</a>
-    <a href="tel:+31651029224"><i class="fas fa-phone"></i> Bel: 06-51029224</a>
-    <a href="https://maps.app.goo.gl/Hbvns8o4FVBqiouY7" target="_blank">
-      <i class="fas fa-location-pin"></i>
-      Voor Anker 2, Enkhuizen
-    </a>
-
-    <div class="socials">
-      <a href="https://www.instagram.com/oneinamillionpoms" target="_blank">
-        <i class="fab fa-instagram"></i> Bekijk ons op Instagram</a>
+    <div class="contact-links">
+      <a href="https://wa.me/31651029224" target="_blank" class="button whatsapp"
+        title="Neem contact op via WhatsApp"><i class="fab fa-whatsapp"></i>
+        Contact via WhatsApp
+      </a>
+      <a href="https://www.instagram.com/oneinamillionpoms" target="_blank" class="button instagram"
+        title="Bekijk & volg ons op Instagram">
+        <i class="fab fa-instagram"></i>
+        Volg ons op Instagram</a>
+      <a href="tel:+31651029224" title="Neem telefonisch contact op"><i class="fas fa-phone"></i> 06 - 51029224</a>
+      <a href="https://maps.app.goo.gl/Hbvns8o4FVBqiouY7" target="_blank" title="Bekijk het adres op Google Maps">
+        <i class="fas fa-location-pin"></i>
+        Voor Anker 2, Enkhuizen
+      </a>
     </div>
   </section>
 
@@ -183,7 +220,7 @@
     <h2>Nestjes</h2>
     <p>
       Af en toe hebben wij een nestje prachtige dwergkeesjes.
-      Met liefde gefokt en uit geteste ouders. Neem <a href="#contact">contact</a> met ons op voor meer informatie.
+      Met liefde gefokt en uit geteste ouders. Neem contact met ons op voor meer informatie.
     </p>
   </section>
 
