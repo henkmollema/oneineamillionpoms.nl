@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Trimsalon in Enkhuizen voor pomeriaantjes / dwergkeesjes - Trimsalon en hobby-kennel Enkhuizen. Knippen & wassen van pomeriaantjes / dwergkeesjes.">
   <title>Trimsalon voor pomeriaantjes / dwergkeesjes in Enkhuizen</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon_192x192.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <meta name="msapplication-TileImage" content="favicon.png">
+  <meta name="theme-color" content="#b26a3d">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
@@ -25,6 +30,15 @@
       height: auto;
     }
 
+    a {      
+      color: #b26a3d;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #b26a3d;
+      text-decoration: underline;
+    }
+
     h1 {
       font-size: 2rem;
       margin: 0.5rem 0;
@@ -34,11 +48,21 @@
       margin-top: 0;
     }
 
+    section {
+      padding: 1rem 1rem 0 1rem;
+    }
+
+    section > h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      margin-top: 0;
+      color: #b26a3d;
+    }
+
     .prijzen {
       display: flex;
       justify-content: center;
       gap: 1rem;
-      padding: 1rem;
       flex-wrap: wrap;
     }
 
@@ -46,7 +70,7 @@
       background-color: #ffeedd;
       border-radius: 10px;
       padding: 1rem;
-      width: 250px;
+      width: 325px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
@@ -56,13 +80,9 @@
     }
 
     .prijs-blok p {
-      font-size: 1.25rem;
+      font-size: 1.4rem;
       font-weight: bold;
       color: #b26a3d;
-    }
-
-    .contact {
-      padding: 1rem;
     }
 
     .contact a {
@@ -77,21 +97,9 @@
       color: #b26a3d;
     }
 
-    .adres {
-      margin-top: 1.5rem;
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-
-    .galerij {
-      padding: 1rem;
-    }
-
-    .galerij h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      margin-top: 0;
-      color: #b26a3d;
+    .nestjes {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .foto-grid {
@@ -136,25 +144,22 @@
   <header>
     <img src="logo.png" width="300" height="150" alt="One in a Million Poms">
     <h1>Trimsalon & hobby-kennel Enkhuizen</h1>
-    <h3>Voor dwergkeesjes / pomeriaantjes</h2>
+    <h3>Voor pomeriaantjes / dwergkeesjes</h2>
   </header>
 
   <section class="prijzen">
     <div class="prijs-blok">
-      <h2>Knippen</h2>
-      <p>€ 35</p>
+      <h2>Wassen & drogen</h2>
+      <p>€ 40</p>
     </div>
     <div class="prijs-blok">
-      <h2>Wassen & knippen</h2>
+      <h2>Wassen, drogen & knippen</h2>
       <p>€ 50</p>
-    </div>
-    <div class="prijs-blok">
-      <h2>Totaalpakket</h2>
-      <p>€ 75</p>
     </div>
   </section>
 
   <section class="contact">
+    <h2 id="contact">Contact</h2>
     <a href="https://wa.me/31651029224" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: 06-51029224</a>
     <a href="tel:+31651029224"><i class="fas fa-phone"></i> Bel: 06-51029224</a>
     <a href="https://maps.app.goo.gl/Hbvns8o4FVBqiouY7" target="_blank">
@@ -166,6 +171,14 @@
       <a href="https://www.instagram.com/oneinamillionpoms" target="_blank">
         <i class="fab fa-instagram"></i> Bekijk ons op Instagram</a>
     </div>
+  </section>
+
+  <section class="nestjes">
+    <h2>Nestjes</h2>
+    <p>
+      Af en toe hebben wij een nestje prachtige dwergkeesjes.
+      Met liefde gefokt en uit geteste ouders. Neem <a href="#contact">contact</a> met ons op voor meer informatie.
+    </p>
   </section>
 
   <section class="galerij">
@@ -181,6 +194,7 @@
     &copy; 2025 One in a Million Poms
   </footer>
 
+  <script src="https://analytics.webenable.app/tracking.js" data-account="KLmBp" async></script>
 </body>
 
 </html>
