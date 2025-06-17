@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Trimsalon & hobby-kennel in Enkhuizen voor pomeranians / dwergkeesjes.">
+  <meta name="description" content="Trimsalon & hobby-kennel in Enkhuizen voor pomeranians / dwergkeesjes. Wassen, drogen en knippen van uw hond.">
+  <meta name="keywords" content="pomeranian,dwergkees,knippen,wassen,drogen,trimsalon,enkhuizen,one in a million poms">
+  <meta name="robots" content="index, follow">
   <meta property="og:title" content="One in a Million Poms trimsalon & hobby-kennel">
-  <meta property="og:description" content="Trimsalon & hobby-kennel in Enkhuizen voor pomeranians / dwergkeesjes.">
+  <meta property="og:description" content="Trimsalon & hobby-kennel in Enkhuizen voor pomeranians / dwergkeesjes. Wassen, drogen en knippen van uw hond.">
   <meta property="og:image" content="https://oneinamillionpoms.nl/logo.png">
   <meta property="og:url" content="https://oneinamillionpoms.nl/">
   <meta property="og:type" content="website">
   <title>One in a Million Poms trimsalon & hobby-kennel</title>
+  <link rel="canonical" href="https://oneinamillionpoms.nl/" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon_192x192.png">
   <link rel="apple-touch-icon" href="favicon.png">
@@ -50,7 +53,7 @@
       margin: 0.5rem 0;
     }
 
-    header h3.subtitle {
+    header h2.subtitle {
       margin-top: 0;
       text-transform: uppercase;
       color: #333;
@@ -61,7 +64,7 @@
       padding: 1rem 1rem 0 1rem;
     }
 
-    section > h2 {
+    section > h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
       margin-top: 0;
@@ -83,7 +86,7 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .prijs-blok h2 {
+    .prijs-blok h3 {
       margin-top: 0;
       font-size: 1.5rem;
     }
@@ -170,6 +173,10 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
+    .foto-grid img.flip {
+      transform: scaleX(-1);
+    }
+
     footer {
       padding: 1rem;
       font-size: 0.9rem;
@@ -183,22 +190,22 @@
   <header>
     <img src="logo.png" width="300" height="150" alt="One in a Million Poms">
     <h1>Trimsalon & hobby-kennel Enkhuizen</h1>
-    <h3 class="subtitle">pomeranians / dwergkeesjes</h2>
+    <h2 class="subtitle">pomeranians / dwergkeesjes</h2>
   </header>
 
   <section class="prijzen">
     <div class="prijs-blok">
-      <h2>Wassen & drogen</h2>
+      <h3>Wassen & drogen</h3>
       <p>€ 40</p>
     </div>
     <div class="prijs-blok">
-      <h2>Wassen, drogen & knippen</h2>
+      <h3>Wassen, drogen & knippen</h3>
       <p>€ 50</p>
     </div>
   </section>
 
   <section class="contact">
-    <h2 id="contact">Contact</h2>
+    <h3 id="contact">Contact</h3>
     <div class="contact-links">
       <a href="https://wa.me/31651029224" target="_blank" class="button whatsapp"
         title="Neem contact op via WhatsApp"><i class="fab fa-whatsapp"></i>
@@ -217,7 +224,7 @@
   </section>
 
   <section class="nestjes">
-    <h2>Nestjes</h2>
+    <h3>Nestjes</h3>
     <p>
       Af en toe hebben wij een nestje prachtige dwergkeesjes.
       Met liefde gefokt en uit geteste ouders. Neem contact met ons op voor meer informatie.
@@ -225,11 +232,11 @@
   </section>
 
   <section class="galerij">
-    <h2>Impressie</h2>
+    <h3>Impressie</h3>
     <div class="foto-grid">
       <img src="lily.jpg" alt="Lily getrimde pomeriaan dwergkees" width="600" height="800" loading="lazy">
       <img src="bobbi.jpg" alt="Bobbi getrimde pomeriaan dwergkees" width="600" height="800" loading="lazy">
-      <img src="fendi.jpg" alt="Fendi getrimde pomeriaan dwergkees" width="600" height="800" loading="lazy" style="transform: scale(-1, 1);">
+      <img src="fendi.jpg" alt="Fendi getrimde pomeriaan dwergkees" width="600" height="800" loading="lazy" class="flip">
     </div>
   </section>
 
